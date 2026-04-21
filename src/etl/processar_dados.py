@@ -298,10 +298,7 @@ def calcular_alvo(df: pd.DataFrame, horizonte: int = 21) -> pd.DataFrame:
 
 
 def executar_preparacao():
-    print("====================================================")
     print("INÍCIO DO PROCESSAMENTO")
-    print("====================================================")
-
     os.makedirs(PASTA_PROCESSADO, exist_ok=True)
 
     inf_diario = carregar_inf_diario(PASTA_BRUTA_INF)
@@ -324,13 +321,13 @@ def executar_preparacao():
     with open(caminho_dict, "w", encoding="utf-8") as f:
         f.write("\n".join(df_final.columns))
 
-    print("====================================================")
+ 
     print("PROCESSAMENTO CONCLUÍDO")
     print(f"CSV salvo em: {caminho_saida_csv}")
     print(f"Excel salvo em: {caminho_saida_xlsx}")
     print(f"Dicionário salvo em: {caminho_dict}")
     print(f"Shape final: {df_final.shape}")
-    print("====================================================")
+  
 
 
 if __name__ == "__main__":
