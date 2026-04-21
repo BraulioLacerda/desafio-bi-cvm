@@ -1,0 +1,12 @@
+pandas
+numpy
+requests
+scikit-learn
+xgboost
+matplotlib
+zipfile
+request
+io
+glob
+json
+seaborn
