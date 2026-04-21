@@ -8,6 +8,7 @@ import io
 RAW_DIR = os.path.join("data", "raw")
 INF_DIR = os.path.join(RAW_DIR, "inf_diario")
 CAD_DIR = os.path.join(RAW_DIR, "cadastro")
+
 os.makedirs(INF_DIR, exist_ok=True)
 os.makedirs(CAD_DIR, exist_ok=True)
 
